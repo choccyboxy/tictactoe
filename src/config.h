@@ -1,0 +1,2 @@
+#define PLAYER_ONE_CHAR 'X'
+#define PLAYER_TWO_CHAR 'O'
