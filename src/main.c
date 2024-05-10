@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "computer.h"
 #include "config.h"
 #include "game.h"
 
-// TODO: Add computer to play against
-// TODO: Add scalable board size
+
+// TODO: Add scalable board size & refactor spaces array
 
 int main() {
   char spaces[] = {'-', '-', '-', '-', '-', '-', '-', '-', '-'};

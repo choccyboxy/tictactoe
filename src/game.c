@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "computer.h"
 #include "config.h"
 
 void build(char place[]) {
@@ -28,11 +29,20 @@ int controller(char spaces[], int player1Went) {
   } else {
     strcpy(player, "Player 2");
     character = PLAYER_TWO_CHAR;
+
+#ifdef COMPUTER_ENABLED
+    strcpy(player, "Computer");
+#endif
   }
 
   int place;
-  printf("%s enter a number from 1-9: ", player);
-  scanf("%d", &place);
+  if (strcmp(player, "Computer") == 0) {
+    place = moveComputer();
+    printf("%s chose place %d\n", player, place);
+  } else {
+    printf("%s enter a number from 1-9: ", player);
+    scanf("%d", &place);
+  }
 
   if (place > 9 || place < 0) {
     printf("[ERROR]: Invalid place\n");
