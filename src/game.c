@@ -31,7 +31,7 @@ int controller(char spaces[], int player1Went) {
   }
 
   int place;
-  printf("%s a number from 1-9: ", player);
+  printf("%s enter a number from 1-9: ", player);
   scanf("%d", &place);
 
   if (place > 9 || place < 0) {
