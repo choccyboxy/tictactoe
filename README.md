@@ -2,6 +2,7 @@
 _My first C project._
 
 - Run `build.sh` to build the binary
+  - Uses gcc to compile
 - Then run `./bin/main` to start the game
 
 - To disable the computer comment out the "COMPUTER_ENABLED" definition in `conifg.h`
