@@ -31,7 +31,7 @@ int controller(char spaces[], int player1Went) {
   }
 
   int place;
-  printf("%s enter 1-9: ", player);
+  printf("%s a number from 1-9: ", player);
   scanf("%d", &place);
 
   if (place > 9 || place < 0) {
@@ -70,7 +70,7 @@ int getOutcome(char spaces[]) {
     }
   }
 
-  // Check for diaganol win
+  // Check for diagonal win
   if (spaces[0] == spaces[4] && spaces[4] == spaces[8]) {
     if (spaces[0] == PLAYER_ONE_CHAR)
       return 1;
@@ -78,7 +78,7 @@ int getOutcome(char spaces[]) {
       return 2;
   }
 
-  // Check for reverse diaganol win
+  // Check for reverse diagonal win
   if (spaces[2] == spaces[4] && spaces[4] == spaces[6]) {
     if (spaces[2] == PLAYER_ONE_CHAR)
       return 1;
