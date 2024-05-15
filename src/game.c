@@ -37,7 +37,7 @@ int controller(char spaces[], int player1Went) {
 
   int place;
   if (strcmp(player, "Computer") == 0) {
-    place = moveComputer();
+    place = moveComputer(spaces);
     printf("%s chose place %d\n", player, place);
   } else {
     printf("%s enter a number from 1-9: ", player);

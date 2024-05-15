@@ -1,1 +1,1 @@
-int moveComputer();
+int moveComputer(char spaces[]);

@@ -5,7 +5,6 @@
 #include "config.h"
 #include "game.h"
 
-
 // TODO: Add scalable board size & refactor spaces array
 
 int main() {
