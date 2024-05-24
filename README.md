@@ -1,8 +1,8 @@
-# Tic-Tac-Toe game built in the command line...
+# Tic-Tac-Toe game built for the command line...
 _My first C project._
 
-- Run `build.sh` to build the binary
-  - Uses gcc to compile
-- Then run `./bin/main` to start the game
+- Build binary with `make build`
+ - uses gcc to compile.
+- Then run `./build/main` to start the game
 
 - To disable the computer comment out the "COMPUTER_ENABLED" definition in `conifg.h`

@@ -1,4 +1,4 @@
-all: src/main.c
+all:
 	rm -r build/
 	@echo "Removed old build files"
 	mkdir build/
